@@ -7,14 +7,14 @@
   "license": "MIT",
   "private": false,
   "devDependencies": {
-    "html-minifier": "^3.5.21",
     "inline-source-cli": "^1.2.0",
+    "pug-cli": "^1.0.0-alpha6",
     "sass": "^1.15.1"
   },
   "scripts": {
-    "build": "yarn run sass && yarn run inline && yarn run htmlmin",
-    "htmlmin": "html-minifier -c htmlmin.json dist/index.html -o dist/index.html",
-    "inline": "inline-source --compress src/index.html dist/index.html",
+    "pug": "pug src/index.pug -o dist",
+    "build": "yarn run pug && yarn run sass && yarn run inline",
+    "inline": "inline-source --compress dist/index.html dist/index.html",
     "sass": "sass src/style/style.scss src/style/style.css --style compressed"
   },
   "dependencies": {

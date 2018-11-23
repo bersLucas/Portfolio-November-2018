@@ -1,5 +1,89 @@
-html {
-  h1{
-    color: red;
+body {
+  font-family: 'IBM Plex Mono', monospace;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1080px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#works {
+  position: absolute;
+  top: 0;
+  right: -50%;
+  width: 100%;
+  transform: skew(-15deg) translate(15vw, 0);
+  transform-origin: top right;
+  max-height: 100vh;
+  overflow-y: scroll;
+  color: white;
+  background: #333;
+  box-sizing: border-box;
+
+  .work {
+    position: relative;
+    width: 60vw;
+    padding: 2em 3.5em;
+
+    .title {
+      font-size: 2em;
+      margin: 0 0 0.25em 0;
+      display: inline-block;
+    }
+
+    .summary {
+      width: 50%;
+      line-height: 1.4;
+      font-size: 1em;
+    }
+
+    .metadata {
+      font-weight: 400;
+      font-size: 0.5em;
+      vertical-align: middle;
+      margin: 0 0 0 10px;
+    }
+
+    &:last-child {
+      padding-bottom: 6em;
+    }
+
+    .links {
+      margin: 1.5em 0 0 0;
+      max-width: 35vw;
+      height: 0;
+      overflow-y: hidden;
+      transition: all cubic-bezier(.07,.95,0,1) 0.3s;
+
+      a {
+        background: #fff;
+        text-decoration: none;
+        padding: 0 .75em;
+        display: inline-block;
+        margin: 0 1em 0.5em 0;
+        transform: skew(15deg);
+        font-weight: 700;
+        border: 3px solid white;
+        border-radius: 20px;
+      }
+
+      a:hover {
+        background-color: transparent !important;
+        color: white !important;
+      }
+    }
+
+    &:hover .links {
+      height: 36px;
+    }
   }
 }
+
+#bio {
+  max-width: 430px;
+  margin: 15vmax 0 0 2vmax;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
