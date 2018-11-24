@@ -1,0 +1,62 @@
+@media (max-width: 900px), (max-height: 600px) {
+  body {
+    display: block;
+    overflow: auto;
+  }
+
+  #bio {
+    max-width: inherit;
+    overflow: auto;
+  }
+
+  #works .work, #bio {
+    max-width: 800px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  #works {
+    max-height: inherit;
+    overflow: auto;
+    transform: none;
+
+    .work {
+      .summary {
+        width: 100%;
+      }
+
+      .links {
+        max-width: inherit;
+        height: auto;
+        overflow-y: visible;
+        display: flex;
+
+        a {
+          transform: none;
+          margin: 0;
+          flex: 1 1 100%;
+          text-align: center;
+          border-radius: 0;
+          padding: 10px 20px;
+          background: transparent;
+          color: white !important;
+          border-right-width: 0;
+
+          &:last-child {
+            border-right-width: 4px;
+          }
+
+          &:hover, &:focus {
+            background-color: white !important;
+            color: initial !important
+          }
+        }
+      }
+
+      &:hover .links {
+        height: auto !important;
+      }
+    }
+  }
+}
