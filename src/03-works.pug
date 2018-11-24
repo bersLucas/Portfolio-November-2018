@@ -349,7 +349,7 @@ mixin work(work)
                       rel="noopener"
                       target="_blank") #{link.title}
     else
-        div.work
+        div.work(style='background-color:' + work.color)
             b.title #{work.name}
                 span.metadata #{work.year}
             div.summary #{work.summary}
