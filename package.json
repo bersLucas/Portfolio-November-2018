@@ -16,8 +16,5 @@
     "build": "yarn run pug && yarn run sass && yarn run inline",
     "inline": "inline-source --compress dist/index.html dist/index.html",
     "sass": "sass src/style/style.scss src/style/style.css --style compressed"
-  },
-  "dependencies": {
-    "normalize.css": "^8.0.1"
   }
 }
