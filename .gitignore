@@ -1,7 +1,7 @@
 dist
 .idea
-src/style/*.css
-src/style/*.map
+src/style/style.css
+src/style/style.css.map
 
 # Logs
 logs
