@@ -5,6 +5,7 @@ body {
   margin: auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 #works {
@@ -18,7 +19,7 @@ body {
   box-sizing: border-box;
   transform: skew(-10deg);
   flex: 1 1 100%;
-  
+
   .work {
     position: relative;
     padding: 2em 2.5em;
@@ -65,13 +66,13 @@ body {
         border-radius: 20px;
       }
 
-      a:hover {
+      a:hover, a:focus {
         background-color: transparent !important;
         color: white !important;
       }
     }
 
-    &:hover .links {
+    &:hover .links, &:focus-within .links{
       height: 36px;
     }
   }
@@ -79,7 +80,9 @@ body {
 
 #bio {
   max-width: 430px;
-  margin: 15vmax 0 0 2vmax;
+  margin: 0 0 0 2vmax;
   font-size: 1.3em;
   line-height: 1.5em;
 }
+
+@import 'mobile';
