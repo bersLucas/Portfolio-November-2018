@@ -6,6 +6,7 @@ $color: #333;
 
 html {
   display: flex;
+  align-items: flex-start;
 }
 
 html, body {
@@ -19,13 +20,13 @@ body {
   height: auto;
   margin: auto;
   bottom: 0;
-  display: flex;
   flex-wrap: nowrap;
   align-items: center;
   align-content: center;
   max-width: 1000px;
   flex-direction: column;
   padding: 3vmin;
+  width: 100%;
 }
 
 #bio {
