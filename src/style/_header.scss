@@ -1,0 +1,26 @@
+
+#bio {
+  width: 100%;
+  border: 5px solid $color;
+  font-size: 150%;
+
+  .bio-container {
+    border: 5px solid $color;
+    min-width: 400px;
+    margin: -5px;
+    padding: 1vmin 2vmin;
+    width: 61.803437%;
+
+    h1 {
+      font-size: 1.61em;
+    }
+
+    p {
+      font-size: 1em;
+    }
+
+    h1, p {
+      margin: 1vmin 0
+    }
+  }
+}

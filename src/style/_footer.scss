@@ -1,0 +1,25 @@
+#contact {
+  a {
+    text-decoration: none;
+    color: $color;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 4vmin;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    transform-origin: center center;
+    margin: auto;
+    height: 4vmin;
+
+    &.left {
+      transform: rotate(-90deg);
+      left: 0;
+    }
+
+    &.right {
+      transform: rotate(90deg);
+      right: 0;
+    }
+  }
+}
