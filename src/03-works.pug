@@ -4,7 +4,7 @@
     let generateBorderRadius = function() {
         var returnVal = 'border-radius:';
         var r = new Array(1,2,3,4).map(v => {
-            return Math.floor(Math.random() * 50) + 25
+            return Math.floor(Math.random() * 100)
         });
 
         returnVal += `${r[0]}% ${100 - r[0]}% ${r[1]}% ${100 - r[1]}% / ${r[2]}% ${r[3]}% ${100 - r[3]}% ${100 - r[2]}%`

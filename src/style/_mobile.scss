@@ -1,4 +1,28 @@
-@media (max-width: ($main-width - 100)), (max-height: 600px) {
+@media (max-width: 1000px) {
+  body {
+    flex-direction: column;
+  }
+  #container {
+    order: 1;
+    max-width: 100%;
+  }
+  .contact {
+    width: 100%;
+
+    &.email {
+      order: 2;
+    }
+    &.resume {
+      order: 3
+    }
+    a {
+      background: $color !important;
+      color: $bg !important;
+      transform: none !important;
+      margin: 0 0 1em 0;
+      padding: 0 1em;
+    }
+  }
   #bio {
     .bio-container {
       min-width: 0;
@@ -8,32 +32,6 @@
   #works {
     .work {
       width: 100%;
-    }
-  }
-}
-
-@media (max-width: $main-width + 150) {
-  footer {
-    border: 5px solid #333;
-    padding: 1vmin 2vmin;
-    background: white;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  #contact {
-    a {
-      text-align: center;
-      margin: 0 20px;
-      font-size: 2em;
-      transform: none !important;
-      position: relative;
-      height: auto;
-
-      &:hover {
-        text-decoration: underline;
-      }
     }
   }
 }

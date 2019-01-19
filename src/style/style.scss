@@ -1,11 +1,12 @@
-$color: #333;
-$main-width: 675px;
+$color: #f1f1f1;
+$bg: #FF6F61;
 
 * {
   box-sizing: border-box;
 }
 
 html {
+  background-color: $bg;
   display: flex;
   align-items: flex-start;
 }
@@ -18,16 +19,18 @@ html, body {
 }
 
 body {
-  height: auto;
-  margin: auto;
-  bottom: 0;
+  display: flex;
   flex-wrap: nowrap;
   align-items: center;
   align-content: center;
-  max-width: $main-width;
-  flex-direction: column;
+  flex-direction: row;
   padding: 3vmin;
   width: 100%;
+  justify-content: space-around;
+}
+
+#container {
+  order: 2;
 }
 
 @import 'header';
