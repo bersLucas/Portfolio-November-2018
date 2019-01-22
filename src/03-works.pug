@@ -13,8 +13,9 @@
 -
 
 mixin work(work)
-    div.work
+    button.work(data-color=work.color aria-label="View info for " + work.name)
         b.title #{work.name}
+        span.summary #{work.summary}
         div.overlay(style="background-color: " + work.color + ';' + generateBorderRadius())
         //    span.metadata #{work.year}
         //div.summary #{work.summary}

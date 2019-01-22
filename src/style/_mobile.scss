@@ -1,6 +1,7 @@
 @media (max-width: 1000px) {
   body {
     flex-direction: column;
+    justify-content: flex-start;
   }
   #container {
     order: 1;

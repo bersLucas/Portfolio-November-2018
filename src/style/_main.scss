@@ -18,11 +18,31 @@
     display: inline-block;
     font-size: 2em;
     position: relative;
+    border: 0;
+    background: transparent;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    line-height: normal;
+    -webkit-appearance: none;
 
+    &::-moz-focus-inner {
+      border: 0;
+      padding: 0;
+    }
+
+    .summary {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      top: 0;
+      margin: auto;
+      visibility: hidden;
+    }
     .title {
       padding: 10px 20px;
       display: inline-block;
-      transition: all 1s cubic-bezier(.07, .95, 0, 1);
+      transition: all 1s $easing;
     }
 
     .overlay {
@@ -33,7 +53,7 @@
       margin: auto;
       position: absolute;
       transform: scale(0);
-      transition: all 1s cubic-bezier(.07, .95, 0, 1);
+      transition: all 1s $easing;
       z-index: -1;
     }
 

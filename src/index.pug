@@ -10,3 +10,14 @@ html(lang="en")
             main#works
                 include 03-works.pug
         include 04-footer.pug
+
+script.
+    window.onload = function() {
+        document.querySelectorAll('.work').forEach(function(work){
+            work.onclick = function() {
+                document.documentElement.style.backgroundColor =
+                    work.getAttribute('data-color');
+            }
+        })
+    }
+

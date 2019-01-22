@@ -1,5 +1,6 @@
 $color: #f1f1f1;
 $bg: #FF6F61;
+$easing: cubic-bezier(.07, .95, 0, 1);
 
 * {
   box-sizing: border-box;
@@ -9,6 +10,7 @@ html {
   background-color: $bg;
   display: flex;
   align-items: flex-start;
+  transition: background-color 1s $easing;
 }
 
 html, body {
@@ -26,6 +28,8 @@ body {
   flex-direction: row;
   padding: 3vmin;
   width: 100%;
+  height: auto;
+  margin: auto;
   justify-content: space-around;
 }
 
