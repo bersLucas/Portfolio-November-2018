@@ -21,10 +21,12 @@
     border: 0;
     background: transparent;
     color: #fff;
+    transform: color 0.5s $easing;
     outline: none;
     cursor: pointer;
     line-height: normal;
     -webkit-appearance: none;
+    overflow: hidden;
 
     &::-moz-focus-inner {
       border: 0;
@@ -39,6 +41,7 @@
       margin: auto;
       visibility: hidden;
     }
+
     .title {
       padding: 10px 20px;
       display: inline-block;
@@ -52,13 +55,10 @@
       top: 0;
       margin: auto;
       position: absolute;
-      transform: scale(0);
+      border-radius: 150px;
+      transform: translateY(100%);
       transition: all 1s $easing;
       z-index: -1;
-    }
-
-    &:not(:hover) .overlay {
-      border-radius: 100% !important;
     }
 
     &:hover {
@@ -67,7 +67,8 @@
       }
 
       .overlay {
-        transform: scale(1.15);
+        transform: translateY(0%);
+        border-radius: 10px;
       }
     }
   }

@@ -60,6 +60,8 @@ var works = [{
     "link": []
 }, {
     "name": "scrollToClip",
+    "bg": "#d30bdd",
+    "color": "#eaddce",
     "summary": "Image clipping based on scroll wheel.",
     "link": [{
 		"title": "Github",
@@ -67,6 +69,8 @@ var works = [{
 	}]
 }, {
     "name": "bPresent",
+    "color": "#f8e3c9",
+    "bg": "#de4949",
     "summary": "A jQuery slide-show framework and editor.",
     "link": [{
 		"title": "More info",
@@ -74,6 +78,8 @@ var works = [{
 	}]
 }, {
     "name": "MSlide",
+    "bg": "#fad3b5",
+    "color": "#f0250e",
     "summary": "A jQuery database-free manga reader.",
     "link": [{
 		"title": "Github",
@@ -81,6 +87,8 @@ var works = [{
 	}]
 }, {
     "name": "ClassScheduler",
+    "color": "#d1382a",
+    "bg": "#dfec6f",
     "summary": "An academic scheduling app.",
     "link": [{
 		"title": "Github",
@@ -91,6 +99,8 @@ var works = [{
     }]
 }, {
     "name": "Yeast Simulation",
+    "color": "#846fbc",
+    "bg": "#eaed8a",
     "summary": "An interactive webpage used to replace a yeast cell laboratory experiment.",
     "link": [{
         "title": "Github",
@@ -101,6 +111,8 @@ var works = [{
 	}]
 }, {
     "name": "Sleep Cycle EP",
+    "bg": "#caf2de",
+    "color": "#e82311",
     "summary": "Drone, Noise, Minimal IDM",
     "link": [{
 		"title": "Bandcamp",
@@ -108,6 +120,8 @@ var works = [{
 	}]
 }, {
     "name": "DSUACM Logo",
+    "bg": "#dc11e7",
+    "color": "#b2f7dd",
     "summary": "A logo for the DSUACM",
     "link": [{
 		"title": "Reference",
@@ -115,6 +129,8 @@ var works = [{
 	}]
 }, {
     "name": "STAY_WARM",
+    "bg": "#eee4cd",
+    "color": "#d73624",
     "summary": "A browser game created for the 2015 DSU Game Jam",
     "link": [{
 		"title": "Play",
@@ -122,6 +138,8 @@ var works = [{
 	}]
 }, {
     "name": "The Black Lodge EP",
+    "bg": "#c6e6fe",
+    "color": "#fd013c",
     "summary": "Dark ambient EP based on Twin Peaks",
     "link": [{
 		"title": "Bandcamp",
@@ -129,6 +147,8 @@ var works = [{
 	}]
 }, {
     "name": "ʕ•́ᴥ•̀ʔ",
+    "bg": "#f5eb7f",
+    "color": "#f9284f",
     "summary": "A puzzle game concept and Android app.",
     "link": [{
 		"title": "Browser",
@@ -139,6 +159,8 @@ var works = [{
     }]
 }, {
     "name": "MinCal Zooper skin",
+    "bg": "#b3f3e7",
+    "color": "#e12e31",
     "summary": "A minimal calendar widget skin.",
     "link": [{
         "title": "Google Play",
@@ -146,10 +168,14 @@ var works = [{
     }]
 }, {
     "name": "Choconeko",
+    "bg": "#5d5d5a",
+    "color": "#fff4e3",
     "summary": "An action brawler game written in Love2D.",
     "link": []
 }, {
     "name": "Nuisance",
+    "color": "#5c8d89",
+    "bg": "#f4f9f4",
     "summary": "Dark ambient, Noise, Drone",
     "link": [{
 		"title": "Bandcamp",
@@ -157,6 +183,8 @@ var works = [{
 	}]
 }, {
     "name": "Compress EP",
+    "bg": "#c4edfb",
+    "color": "#ee0c04",
     "summary": "Dark ambient, Noise",
     "link": [{
 		"title": "Bandcamp",
@@ -164,6 +192,8 @@ var works = [{
 	}]
 }, {
     "name": "JSRadial",
+    "bg": "#ddf04d",
+    "color": "#d93328",
     "summary": "A radial progressbar plugin for jQuery.",
     "link": [{
         "title": "Github",
@@ -174,6 +204,8 @@ var works = [{
 	}]
 }, {
     "name": "Afraid and Uncertain",
+    "bg": "#fc2533",
+    "color": "#c3effe",
     "summary": "Expertimental Electronic, Ambient Techno",
     "link": [{
 		"title": "Bandcamp",
@@ -181,6 +213,8 @@ var works = [{
 	}]
 }, {
     "name": "●○●",
+    "bg": "#fffa67",
+    "color": "#d34848",
     "summary": "A puzzle game written in jQuery.",
     "link": [{
 		"title": "Browser",
@@ -191,6 +225,8 @@ var works = [{
     }]
 }, {
     "name": "Minimal Firefox",
+    "color": "#ffaaab",
+    "bg": "#35234b",
     "summary": "An alternate stylesheet for Firefox",
     "link": [{
 		"title": "Github",
@@ -201,6 +237,8 @@ var works = [{
     }]
 }, {
     "name": "SlimmerReddit",
+    "color": "#28a3b2",
+    "bg": "#f5eece",
     "summary": "A userstyle for reddit.com",
     "link": [{
 		"title": "Userstyles.org",
@@ -208,6 +246,8 @@ var works = [{
 	}]
 }, {
     "name": "MangoReader",
+    "color": "#a0ee58",
+    "bg": "#fff3d9",
     "summary": "Design and CSS for a manga reader",
     "link": []
 }];

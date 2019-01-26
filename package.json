@@ -6,14 +6,19 @@
   "author": "Lucas Bersier <contact@lucasbersier.com>",
   "license": "MIT",
   "private": false,
+  "browserslist": "> 0.25%, not dead",
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
     "inline-source-cli": "^1.2.0",
     "pug-cli": "^1.0.0-alpha6",
     "sass": "^1.15.1"
   },
   "scripts": {
+    "babel": "npx babel src/js --out-dir src/js/out  --presets=@babel/preset-env",
     "pug": "pug src/index.pug -o dist",
-    "build": "yarn run pug && yarn run sass && yarn run inline",
+    "build": "yarn run babel && yarn run pug && yarn run sass && yarn run inline",
     "inline": "inline-source --compress dist/index.html dist/index.html",
     "sass": "sass src/style/style.scss src/style/style.css --style compressed"
   },

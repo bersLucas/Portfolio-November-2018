@@ -6,11 +6,15 @@ $easing: cubic-bezier(.07, .95, 0, 1);
   box-sizing: border-box;
 }
 
+
 html {
+  transition: background-color 1s $easing;
   background-color: $bg;
+}
+
+body {
   display: flex;
   align-items: flex-start;
-  transition: background-color 1s $easing;
   color: $color;
 }
 
@@ -20,7 +24,7 @@ html, body {
   margin: 0;
 }
 
-body {
+#app {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
