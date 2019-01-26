@@ -5,19 +5,11 @@ html(lang="en")
 
     body
         div#container
-            header#bio
+            header#bio(:style="{borderColor: selectedWork.color}")
                 include 02-bio.pug
             main#works
                 include 03-works.pug
         include 04-footer.pug
 
-script.
-    window.onload = function() {
-        document.querySelectorAll('.work').forEach(function(work){
-            work.onclick = function() {
-                document.documentElement.style.backgroundColor =
-                    work.getAttribute('data-color');
-            }
-        })
-    }
-
+script(src="src/js/works.js" inline)
+script(src="src/js/app.js" inline)
