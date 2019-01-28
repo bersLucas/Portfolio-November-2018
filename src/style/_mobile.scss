@@ -2,6 +2,7 @@
   #app {
     flex-direction: column;
     justify-content: flex-start;
+    transform: none !important;
   }
   #container {
     order: 1;

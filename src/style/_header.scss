@@ -2,10 +2,12 @@
 #bio {
   width: 100%;
   border: 5px solid $color;
+  transition: border-color 10s $easing;
   font-size: 150%;
 
   .bio-container {
     border: 5px solid $color;
+    transition: border-color 10s $easing, color 10s $easing;
     min-width: 400px;
     margin: -5px;
     padding: 1vmin 2vmin;

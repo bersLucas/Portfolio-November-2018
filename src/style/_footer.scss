@@ -12,6 +12,7 @@
     color: $color;
     text-transform: uppercase;
     transform-origin: center center;
+    transition: color 10s $easing;
 
     &:hover {
       text-decoration: underline;

@@ -1,6 +1,6 @@
 button.work(v-for="work in works"
             @mouseover="hover(work,true)"
             @mouseout="hover(work,false)"
-            @click="open(work)")
+            @click="open(work, $event)")
     b.title(:style="hoveringWork === work ? {color: hoveringWork.color} : {color: selectedWork.color}") {{work.name}} {{work.hover}}
     div.overlay(:style="{backgroundColor:  work.bg}")

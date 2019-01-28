@@ -15,3 +15,5 @@ const vm = new Vue({
         }
     }
 });
+
+// followCursor([document.querySelector('#app')], 10);
