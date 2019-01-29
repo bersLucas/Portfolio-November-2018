@@ -1,13 +1,4 @@
-div.bio-container(:style="{borderColor: selectedWork.color, color: selectedWork.color}"
-                  v-if="!selectedWork.name")
+div.bio-container(:style="{borderColor: selectedWork.color, color: selectedWork.color}")
     h1 Lucas Bersier
     p My goal is to design Web Apps with emphasis on accessibility, performance, and simplicity.
     p I have experience working with Angular.js, Vue, jQuery, Drupal 7, and other tools for LAMP or JAM stack development.
-
-div.bio-container(:style="{borderColor: selectedWork.color, color: selectedWork.color}"
-                  v-if="selectedWork.name")
-    h1 {{selectedWork.name}}
-    p {{selectedWork.summary}}
-    ul
-        li(v-for="link in selectedWork.link")
-            a(target="_blank" :href="link.url") {{link.title}}

@@ -1,9 +1,17 @@
-#container {
+#container,
+#selected-work {
   display: flex;
   flex-direction: column;
   flex: 1 1 100%;
   box-sizing: border-box;
   max-width: 80%;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
 }
 
 #works {
@@ -15,17 +23,8 @@
   color: $color;
 
   .work {
-    display: inline-block;
-    font-size: 2em;
-    position: relative;
-    border: 0;
-    background: transparent;
-    color: #fff;
     transform: color 0.5s $easing;
-    outline: none;
-    cursor: pointer;
-    line-height: normal;
-    -webkit-appearance: none;
+    position: relative;
 
     &::-moz-focus-inner {
       border: 0;

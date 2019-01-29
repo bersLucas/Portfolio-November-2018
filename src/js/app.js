@@ -1,11 +1,16 @@
 const backdropContainer = document.getElementById('backdrop-container');
 let transitioning = false;
+const defaultWork = {
+    name: null,
+    bg: '#f3e9cf',
+    color: '#de4444',
+}
 
 const vm = new Vue({
     el: '#app',
     data: {
         works: works,
-        selectedWork: {name:null},
+        selectedWork: defaultWork,
         hoveringWork: {},
     },
     methods: {
@@ -14,25 +19,15 @@ const vm = new Vue({
                 return;
             }
             requestAnimationFrame(()=> {
-                transitioning = true;
-                let a = `<div class="backdrop" 
-                          style="background-color: ${work.bg};
-                                 top: ${document.documentElement.scrollTop + ev.clientY}px; 
-                                 left: ${ev.clientX}px">
-                     </div>`;
-
-                let elem = backdropContainer.appendChild(getNodes(a)[0]);
-                elem.style.transform = `scale(${getBackdropHeight()})`;
-                setTimeout(() => {
-                    document.documentElement.style.backgroundColor = work.bg;
-                    elem.remove();
-                    transitioning = false;
-                }, 1750);
-                vm.selectedWork = work;
+                transitionTo(work, ev);
             });
         },
         hover: (work, bool) => {
             return bool ? vm.hoveringWork = work : vm.hoveringWork = null;
+        },
+        back: (ev) => {
+            vm.selectedWork = {name: null};
+            transitionTo(defaultWork, ev)
         }
     }
 });
@@ -42,10 +37,28 @@ const getNodes = str => {
 };
 
 const getBackdropHeight = () => {
-    return (Math.max(
+    return Math.max(
         document.body.offsetHeight,
         document.body.offsetWidth
-    ) / 64) * 3.5;
+    ) * .1;
+};
+
+const transitionTo = (work,ev) => {
+    transitioning = true;
+    let a = `<div class="backdrop" 
+                          style="background-color: ${work.bg};
+                                 top: ${document.documentElement.scrollTop + ev.clientY}px; 
+                                 left: ${ev.clientX}px">
+                     </div>`;
+
+    let elem = backdropContainer.appendChild(getNodes(a)[0]);
+    elem.style.transform = `scale(${getBackdropHeight()})`;
+    setTimeout(() => {
+        document.documentElement.style.backgroundColor = work.bg;
+        elem.remove();
+        transitioning = false;
+    }, 1250);
+    vm.selectedWork = work;
 };
 
 followCursor([document.querySelector('#app')], 10);

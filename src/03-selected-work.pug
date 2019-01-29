@@ -1,0 +1,8 @@
+div.bio-container(:style="{borderColor: selectedWork.color, color: selectedWork.color}")
+    button.button-reset(@click="back($event)"
+                        :style="{color: selectedWork.color}") &#x2190;
+    h1 {{selectedWork.name}}
+        p {{selectedWork.summary}}
+        ul(v-if="selectedWork.name")
+            li(v-for="link in selectedWork.link"
+            :href="link.url") {{link.title}}

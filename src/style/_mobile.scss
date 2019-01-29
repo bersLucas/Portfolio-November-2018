@@ -4,7 +4,8 @@
     justify-content: flex-start;
     transform: none !important;
   }
-  #container {
+  #container,
+  #selected-work {
     order: 1;
     max-width: 100%;
   }

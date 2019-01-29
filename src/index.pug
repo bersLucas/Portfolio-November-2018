@@ -4,12 +4,16 @@ html(lang="en")
         include 01-head.pug
 
     body
-        div#app
-            div#container
-                header#bio(:style="{borderColor: selectedWork.color}")
-                    include 02-bio.pug
-                main#works
-                    include 03-works.pug
+        div#app(:style="{color: selectedWork.color}")
+            transition(name="fade")
+                div#container(v-if="!selectedWork.name")
+                    header#bio(:style="{borderColor: selectedWork.color}")
+                        include 02-bio.pug
+                    main#works
+                        include 03-works.pug
+                div#selected-work(v-if="selectedWork.name")
+                    include 03-selected-work.pug
+
             include 04-footer.pug
         div#backdrop-container
 

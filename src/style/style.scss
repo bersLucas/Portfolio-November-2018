@@ -1,5 +1,5 @@
-$color: #f1f1f1;
-$bg: #FF6F61;
+$color: #de4444;
+$bg: #f3e9cf;
 $easing: cubic-bezier(.07, .95, 0, 1);
 
 * {
@@ -36,8 +36,20 @@ html, body {
   justify-content: space-around;
 }
 
-#container {
+#container,
+#selected-work {
   order: 2;
+}
+
+.button-reset {
+  display: inline-block;
+  font-size: 2em;
+  border: 0;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  line-height: normal;
+  -webkit-appearance: none;
 }
 
 @import 'header';
