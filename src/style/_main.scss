@@ -7,13 +7,6 @@
   max-width: 80%;
 }
 
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s;
-}
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0;
-}
-
 #works {
   display: flex;
   flex-wrap: wrap;
@@ -43,7 +36,7 @@
     .title {
       padding: 10px 20px;
       display: inline-block;
-      transition: all 10s $easing;
+      transition: color 2s $easing;
     }
 
     .overlay {

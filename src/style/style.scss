@@ -8,6 +8,8 @@ $easing: cubic-bezier(.07, .95, 0, 1);
 
 html {
   background-color: $bg;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 body {
