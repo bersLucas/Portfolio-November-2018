@@ -4,5 +4,8 @@ div.bio-container(:style="{borderColor: selectedWork.color, color: selectedWork.
     h1 {{selectedWork.name}}
         p {{selectedWork.summary}}
         ul(v-if="selectedWork.name")
-            li(v-for="link in selectedWork.link"
-            :href="link.url") {{link.title}}
+            li(v-for="link in selectedWork.link")
+                a(:href="link.url"
+                  :style="{color: selectedWork.color, borderColor: selectedWork.color}"
+                  rel="noopener"
+                  target="_blank") {{link.title}}
