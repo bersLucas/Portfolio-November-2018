@@ -2,8 +2,8 @@ const backdropContainer = document.getElementById('backdrop-container');
 let transitioning = false;
 const defaultWork = {
     name: null,
-    bg: '#f3e9cf',
-    color: '#de4444',
+    bg: '#4161f3',
+    color: '#f3ecff',
 }
 
 const vm = new Vue({
@@ -61,4 +61,4 @@ const transitionTo = (work,ev) => {
     vm.selectedWork = work;
 };
 
-followCursor([document.querySelector('#app')], 10);
+followCursor([document.querySelector('#app')], 4.5);

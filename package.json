@@ -16,7 +16,7 @@
     "sass": "^1.15.1"
   },
   "scripts": {
-    "babel": "npx babel src/js --out-dir src/js/out  --presets=@babel/preset-env",
+    "babel": "npx babel src/js --out-dir src/js/out --ignore src/js/out  --presets=@babel/preset-env",
     "pug": "pug src/index.pug -o dist",
     "build": "yarn run babel && yarn run pug && yarn run sass && yarn run inline",
     "inline": "inline-source --compress dist/index.html dist/index.html",
