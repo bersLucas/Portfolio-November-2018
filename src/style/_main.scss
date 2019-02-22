@@ -2,8 +2,9 @@
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin: 20px 0;
+  max-width: 1180px;
 
   .work {
     transition: color 0.5s $easing;
@@ -52,7 +53,6 @@
   border-top: 5px solid currentColor;
   padding: 2vmin;
   font-size: 150%;
-  width: 100%;
   animation: fade-in 2s $easing forwards;
 
   p {
