@@ -1,13 +1,16 @@
-div.bio-container(:style="{borderColor: selectedWork.color, color: selectedWork.color}")
+div.bio-container(:style="{color: selectedWork.color}")
     button.button-reset(@click="back($event)"
                         style="float:right"
-                        aria-label="Return to home"
-                        :style="{color: selectedWork.color}") x
+                        aria-label="Return to home") 
+      svg(xmlns='http://www.w3.org/2000/svg' width='35' height='35' viewbox='0 0 24 24' fill='none' :stroke="selectedWork.color" stroke-width='3' stroke-linecap='round' stroke-linejoin='round')
+        line(x1='18' y1='6' x2='6' y2='18')
+        line(x1='6' y1='6' x2='18' y2='18')
+
     h1 {{selectedWork.name}}
-        p {{selectedWork.summary}}
-        ul(v-if="selectedWork.name")
-            li(v-for="link in selectedWork.link")
-                a(:href="link.url"
-                  :style="{color: selectedWork.color, borderColor: selectedWork.color}"
-                  rel="noopener"
-                  target="_blank") {{link.title}}
+    p {{selectedWork.summary}}
+    ul(v-if="selectedWork.name")
+        li(v-for="link in selectedWork.link")
+            a(:href="link.url"
+              :style="{color: selectedWork.color}"
+              rel="noopener"
+              target="_blank") {{link.title}}

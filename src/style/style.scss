@@ -16,26 +16,43 @@ body {
   display: flex;
   align-items: flex-start;
   color: $color;
+  align-items: center;
+  justify-content: center;
 }
 
-html, body {
+body,
+html {
   height: 100%;
   font-family: 'IBM Plex Mono', monospace;
   margin: 0;
 }
 
+h1 {
+  font-size: 1.61em;
+}
+
+p {
+  font-size: 1em;
+}
+
+h1,
+p {
+  margin: 1vmin 0;
+}
+
 #app {
-  display: flex;
+  transform: scale(0.9);
   flex-wrap: nowrap;
-  align-items: center;
+  align-items: stretch;
   align-content: center;
   flex-direction: row;
-  padding: 3vmin;
   width: 100%;
   max-width: 1180px;
-  height: auto;
-  margin: auto;
   justify-content: space-around;
+  justify-items: stretch;
+  display: flex;
+  border-bottom: 5px solid currentColor;
+  margin: 3vmin;
 }
 
 #container,
@@ -54,7 +71,6 @@ html, body {
   -webkit-appearance: none;
   font-family: inherit;
 }
-
 @import 'header';
 @import 'main';
 @import 'footer';

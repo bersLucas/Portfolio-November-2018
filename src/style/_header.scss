@@ -1,28 +1,15 @@
-
 #bio {
   width: 100%;
-  border: 5px solid $color;
+  border-bottom: 5px solid currentColor;
+  border-top: 5px solid currentColor;
   transition: border-color 10s $easing;
   font-size: 150%;
 
   .bio-container {
-    border: 5px solid $color;
+    border-right: 5px solid currentColor;
     transition: border-color 10s $easing, color 10s $easing;
     min-width: 400px;
-    margin: -5px;
     padding: 1vmin 2vmin;
-    width: 61.803437%;
-
-    h1 {
-      font-size: 1.61em;
-    }
-
-    p {
-      font-size: 1em;
-    }
-
-    h1, p {
-      margin: 1vmin 0
-    }
+    width: 61.8%;
   }
 }
