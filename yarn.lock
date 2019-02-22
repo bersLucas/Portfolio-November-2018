@@ -1264,10 +1264,10 @@ find-up@^1.0.0:
     path-exists "^2.0.0"
     pinkie-promise "^2.0.0"
 
-followcursor@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/followcursor/-/followcursor-1.2.0.tgz#8b843768dd10f6405c8ebacfc39da775e45259fa"
-  integrity sha512-snn7Hrp7CrTMzDEerT1xx7ANNl6O0RvuiZPaOc0zLulFM+U33U1ZhAMQJmG/f/8vJpJHscbS+RvTAcioTHRhhQ==
+followcursor@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/followcursor/-/followcursor-1.2.1.tgz#7433c6ad18f36835a846f645532f549b71fd09f4"
+  integrity sha512-B3XNnVbbjIVybe9LIhHPQRQ78xfn4hHVwL9I59NhBpwBQZTQcAoUioVNuymjn2mBmmviz9QXPNvA+wr7jGhOuQ==
   dependencies:
     babel-polyfill "^6.26.0"
 

@@ -23,7 +23,7 @@
     "sass": "sass src/style/style.scss src/style/style.css --style compressed"
   },
   "dependencies": {
-    "followcursor": "^1.2.0",
+    "followcursor": "^1.2.1",
     "typeface-ibm-plex-mono": "^0.0.61",
     "vue": "^2.6.7"
   }
