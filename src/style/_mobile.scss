@@ -1,37 +1,60 @@
 @media (max-width: 1000px) {
+  body {
+    align-items: flex-start;
+  }
+
   #app {
     flex-direction: column;
     justify-content: flex-start;
     transform: none !important;
+    border-bottom: 0;
   }
+
+  #selected-work {
+    border-left: 5px solid currentColor;
+    border-right: 5px solid currentColor;
+    border-bottom: 5px solid currentColor;
+    margin-bottom: 3vmin;
+  }
+
   #container,
   #selected-work {
     order: 1;
     max-width: 100%;
   }
+
   .contact {
     width: 100%;
+    border: 0;
+    display: inline-block;
+    text-align: center;
 
     &.email {
       order: 2;
     }
+
     &.resume {
-      order: 3
+      order: 3;
     }
+
     a {
       border: 5px solid red;
       text-decoration: none;
       transform: none !important;
-      margin: 0 0 1em 0;
+      margin: 0 0 1em;
       padding: 0 1em;
     }
   }
+
   #bio {
+    border-left: 5px solid currentColor;
+
     .bio-container {
       min-width: 0;
       width: 100%;
     }
   }
+
   #works {
     .work {
       width: 100%;
