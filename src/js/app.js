@@ -44,7 +44,6 @@ const getBackdropHeight = () => {
 };
 
 const transitionTo = (work,ev) => {
-    transitioning = true;
     let a = `<div class="backdrop" 
                           style="background-color: ${work.bg};
                                  top: ${document.documentElement.scrollTop + ev.clientY}px; 
@@ -53,10 +52,10 @@ const transitionTo = (work,ev) => {
 
     let elem = backdropContainer.appendChild(getNodes(a)[0]);
     elem.style.transform = `scale(${getBackdropHeight()})`;
+    document.documentElement.scrollTop = 0;
     setTimeout(() => {
         document.documentElement.style.backgroundColor = work.bg;
         elem.remove();
-        transitioning = false;
     }, 1250);
     vm.selectedWork = work;
 };

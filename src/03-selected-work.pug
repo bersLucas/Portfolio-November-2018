@@ -1,6 +1,8 @@
 div.bio-container(:style="{borderColor: selectedWork.color, color: selectedWork.color}")
     button.button-reset(@click="back($event)"
-                        :style="{color: selectedWork.color}") &#x1F519;
+                        style="float:right"
+                        aria-label="Return to home"
+                        :style="{color: selectedWork.color}") x
     h1 {{selectedWork.name}}
         p {{selectedWork.summary}}
         ul(v-if="selectedWork.name")

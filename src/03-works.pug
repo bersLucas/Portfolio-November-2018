@@ -1,4 +1,5 @@
 button.work.button-reset(v-for="work in works"
+            :aria-label="'Read more about ' + work.name"
             @mouseover="hover(work,true)"
             @mouseout="hover(work,false)"
             @click="open(work, $event)")

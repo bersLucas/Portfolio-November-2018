@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "followcursor": "^1.1.0",
+    "typeface-ibm-plex-mono": "^0.0.61",
     "vue": "^2.5.22"
   }
 }
