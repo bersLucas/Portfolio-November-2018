@@ -16,7 +16,7 @@
     transform-origin: center center;
     transition: color 1.25s $easing;
 
-    &:hover {
+    &:hover, &:focus {
       border-bottom: 3px solid currentColor;
     }
   }

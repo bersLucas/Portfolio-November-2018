@@ -2,6 +2,8 @@ button.work.button-reset(v-for="work in works"
             :aria-label="'Read more about ' + work.name"
             @mouseover="hover(work,true)"
             @mouseout="hover(work,false)"
+            @focus="hover(work,true)"
+            @blur="hover(work,false)"
             @click="open(work, $event)")
     b.title(:style="hoveringWork === work ? {color: hoveringWork.color} : {color: selectedWork.color}") {{work.name}}
     div.overlay(:style="{backgroundColor: work.bg}")

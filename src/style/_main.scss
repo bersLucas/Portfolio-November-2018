@@ -36,7 +36,7 @@
       z-index: -1;
     }
 
-    &:hover {
+    &:hover, &:focus {
       .title {
         border-bottom: 3px solid currentColor;
         margin-bottom: 7px;
@@ -62,7 +62,7 @@
   a {
     text-decoration: none;
 
-    &:hover {
+    &:hover, &:focus {
       border-bottom: 3px solid currentColor;
     }
   }
