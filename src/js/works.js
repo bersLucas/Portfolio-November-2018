@@ -140,18 +140,6 @@ var works = [{
 		"url": "http://aiend.bandcamp.com/album/compress-ep"
 	}]
 }, {
-    "name": "JSRadial",
-    "bg": "#B163A3",
-    "color": "#fff479",
-    "summary": "A radial progressbar plugin for jQuery.",
-    "link": [{
-        "title": "Github",
-        "url": "https://github.com/bersLucas/JSRadial"
-    }, {
-        "url": "http://lucasbersier.com/JSRadial/",
-        "title": "Documentation"
-	}]
-}, {
     "name": "Afraid and Uncertain",
     "bg": "#4d4845",
     "color": "#f94244",
@@ -168,8 +156,5 @@ var works = [{
     "link": [{
 		"title": "Browser",
 		"url": "http://lucasbersier.com/untitled1apk"
-	}, {
-        "title": "Google Play",
-        "url": "https://play.google.com/store/apps/details?id=com.lucasbersier.untitled1.apk"
-    }]
+	}]
 }];

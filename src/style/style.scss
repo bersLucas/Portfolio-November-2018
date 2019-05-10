@@ -7,6 +7,7 @@ $easing: cubic-bezier(.07, .95, 0, 1);
 }
 
 html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   background-color: $bg;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -14,7 +15,6 @@ html {
 
 body {
   display: flex;
-  align-items: flex-start;
   color: $color;
   align-items: center;
   justify-content: center;
@@ -76,4 +76,3 @@ p {
 @import 'main';
 @import 'footer';
 @import 'mobile';
-@import 'fonts';
