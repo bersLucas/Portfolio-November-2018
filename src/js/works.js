@@ -6,10 +6,9 @@ var works = [{
     link: [{
         title: 'Github',
         url: 'https://github.com/bersLucas/liljs'
-    }, {
-        title: 'demo',
-        url: 'https://lucasbersier.com/liljs/',
-    }]
+    }
+      /*TODO: Add me*/
+    ]
 }, {
     "name": "#js13k 2018",
     "color": "#333",
@@ -21,9 +20,6 @@ var works = [{
     }, {
         "title": "Submission",
         "url": "https://js13kgames.com/entries/when-my-vpn-goes-offline-it-allows-all-kinds-of-people-to-snoop-on-my-computer-such-as-demons"
-    }, {
-        "title": "Blog",
-        "url": "https://js13k.lucasbersier.com/"
     }]
 }, {
     "name": "howmuchis",
@@ -61,8 +57,8 @@ var works = [{
 		"title": "Github",
 		"url": "https://github.com/bersLucas/HI6MA"
 	}, {
-        "title": "Live demo",
-        "url": "http://m3ow.moe"
+        "title": "Github",
+        "url": "https://github.com/bersLucas/HI6MA"
     }]
 }, {
     "name": "scrollToClip",
@@ -79,8 +75,8 @@ var works = [{
     "bg": "#c25858",
     "summary": "A jQuery slide-show framework and editor. Allows presentations to be exported as a stand-alone .html file that can be viewed in any device.",
     "link": [{
-		"title": "More info",
-		"url": "http://lucasbersier.com/bPresent"
+		"title": "Github",
+		"url": "https://github.com/bersLucas/bPresent"
 	}]
 }, {
     "name": "ClassScheduler",
@@ -90,10 +86,7 @@ var works = [{
     "link": [{
 		"title": "Github",
 		"url": "https://github.com/bersLucas/ClassScheduler"
-	}, {
-        "title": "Live demo",
-        "url": "http://lucasbersier.com/ClassScheduler/"
-    }]
+	}]
 }, {
     "name": "Sleep Cycle EP",
     "bg": "#406269",
@@ -102,15 +95,6 @@ var works = [{
     "link": [{
 		"title": "Bandcamp",
 		"url": "http://aiend.bandcamp.com/album/sleep-cycle-ep"
-	}]
-}, {
-    "name": "STAY_WARM",
-    "bg": "#000",
-    "color": "#eccb83",
-    "summary": "A browser game created form the 2016 DeSales University game jam.",
-    "link": [{
-		"title": "Play",
-		"url": "http://lucasbersier.com/STAY_WARM"
 	}]
 }, {
     "name": "The Black Lodge EP",
@@ -153,8 +137,7 @@ var works = [{
     "bg": "#ededed",
     "color": "#26AA30",
     "summary": "A puzzle game written in jQuery.",
-    "link": [{
-		"title": "Browser",
-		"url": "http://lucasbersier.com/untitled1apk"
-	}]
+    "link": [
+      /*TODO: Add me*/
+    ]
 }];
