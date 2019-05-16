@@ -68,26 +68,6 @@
   }
 }
 
-#backdrop-container {
-  width: 100vw;
-  min-height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  z-index: -1;
-
-  .backdrop {
-    position: absolute;
-    width: 2em;
-    height: 2em;
-    margin: -1em 0 0 -1em;
-    border-radius: 100%;
-    z-index: -1;
-    transform: scale(1);
-    transition: transform 10s $easing;
-  }
-}
 @keyframes fade-in {
   from {
     opacity: 0;
