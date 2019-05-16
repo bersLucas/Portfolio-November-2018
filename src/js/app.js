@@ -1,10 +1,8 @@
-const backdropContainer = document.getElementById('backdrop-container');
-let transitioning = false;
 const defaultWork = {
     name: null,
     bg: '#4161f3',
     color: '#f3ecff',
-}
+};
 
 const vm = new Vue({
     el: '#app',
@@ -14,50 +12,18 @@ const vm = new Vue({
         hoveringWork: {},
     },
     methods: {
-        open: (work, ev) => {
-            if (transitioning) {
-                return;
-            }
-            requestAnimationFrame(()=> {
-                transitionTo(work, ev);
-            });
+        open: (work) => {
+            document.documentElement.style.backgroundColor = work.bg;
+            vm.selectedWork = work;
         },
         hover: (work, bool) => {
             return bool ? vm.hoveringWork = work : vm.hoveringWork = null;
         },
-        back: (ev) => {
-            vm.selectedWork = {name: null};
-            transitionTo(defaultWork, ev)
+        back: () => {
+            document.documentElement.style.backgroundColor = defaultWork.bg;
+            vm.selectedWork = defaultWork;
         }
     }
 });
-
-const getNodes = str => {
-    return new DOMParser().parseFromString(str, 'text/html').body.childNodes;
-};
-
-const getBackdropHeight = () => {
-    return Math.max(
-        document.body.offsetHeight,
-        document.body.offsetWidth
-    ) * .1;
-};
-
-const transitionTo = (work,ev) => {
-    let a = `<div class="backdrop"
-                          style="background-color: ${work.bg};
-                                 top: ${document.documentElement.scrollTop + ev.clientY}px;
-                                 left: ${ev.clientX}px">
-                     </div>`;
-
-    let elem = backdropContainer.appendChild(getNodes(a)[0]);
-    elem.style.transform = `scale(${getBackdropHeight()})`;
-    document.documentElement.scrollTop = 0;
-    setTimeout(() => {
-        document.documentElement.style.backgroundColor = work.bg;
-        elem.parentNode.removeChild(elem);
-    }, 1250);
-    vm.selectedWork = work;
-};
 
 followCursor([document.querySelector('#app')], 4.5);
