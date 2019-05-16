@@ -6,9 +6,10 @@ var works = [{
     link: [{
         title: 'Github',
         url: 'https://github.com/bersLucas/liljs'
-    }
-      /*TODO: Add me*/
-    ]
+    }, {
+        title: 'liljs.js.org',
+        url: 'https://liljs.js.org/'
+    }]
 }, {
     "name": "#js13k 2018",
     "color": "#333",
