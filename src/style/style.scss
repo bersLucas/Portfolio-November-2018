@@ -8,9 +8,9 @@ $easing: cubic-bezier(.07, .95, 0, 1);
 
 html {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  background-color: $bg;
   overflow-x: hidden;
   overflow-y: scroll;
+  transition: all 5s $easing;
 }
 
 body {

@@ -1,8 +1,10 @@
+const defaultColor = (Math.random() * works.length).toFixed(0);
 const defaultWork = {
     name: null,
-    bg: '#4161f3',
-    color: '#f3ecff',
+    bg: works[defaultColor].bg,
+    color: works[defaultColor].color,
 };
+document.documentElement.style.backgroundColor = defaultWork.bg;
 
 const vm = new Vue({
     el: '#app',
