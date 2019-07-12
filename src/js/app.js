@@ -1,4 +1,4 @@
-const defaultColor = (Math.random() * works.length).toFixed(0);
+const defaultColor = (Math.random() * (works.length - 1)).toFixed(0);
 const defaultWork = {
     name: null,
     bg: works[defaultColor].bg,
