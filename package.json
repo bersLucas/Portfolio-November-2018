@@ -7,23 +7,19 @@
   "license": "MIT",
   "private": false,
   "browserslist": "> 0.25%, not dead",
-  "devDependencies": {
-    "@babel/cli": "^7.5.0",
-    "@babel/core": "^7.5.4",
-    "@babel/preset-env": "^7.5.4",
-    "inline-source-cli": "^1.2.0",
-    "pug-cli": "^1.0.0-alpha6",
-    "sass": "^1.22.3"
-  },
   "scripts": {
-    "babel": "npx babel src/js --out-dir src/js/out --ignore src/js/out  --presets=@babel/preset-env",
-    "pug": "pug src/index.pug -o dist",
-    "build": "yarn run babel && yarn run pug && yarn run sass && yarn run inline",
-    "inline": "inline-source --compress dist/index.html dist/index.html",
-    "sass": "sass src/style/style.scss src/style/style.css --style compressed"
+    "build": "node build.js"
   },
   "dependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/preset-env": "^7.5.4",
+    "eslint": "^6.0.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.2",
     "followcursor": "^1.2.1",
+    "inline-source": "^6.2.0",
+    "pug": "^2.0.4",
+    "sass": "^1.22.5",
     "vue": "^2.6.10"
   }
 }
