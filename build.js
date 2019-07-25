@@ -58,8 +58,6 @@ const writeJS = files => Promise.all(
       compress: true,
     });
     await fs.writeFile('dist/index.html', html);
-
-    console.log('✨ Done!');
   } catch (err) {
     console.log(err);
   }
